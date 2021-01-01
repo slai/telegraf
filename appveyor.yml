@@ -18,7 +18,8 @@ platform: x64
 
 install:
   - choco install make
-  - cd "%GOPATH%\src\github.com\influxdata\telegraf"
+  - dir C:\msys64\
+  - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | c:\msys64\bash -s v1.34.1
   - git config --system core.longpaths true
   - go version
   - go env
